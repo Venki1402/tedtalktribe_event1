@@ -121,7 +121,7 @@ var elements = [
     "Online communication and real-life friendship",
     "Creativity cannot be taught",
     "Why is a failure the greatest teacher?",
-    "Sex Education",
+    // "Sex Education",
     // "How Digital Banking Helped India in its GDP"
 ];
 
@@ -141,7 +141,7 @@ function selectRandomElement() {
     var randomIndex = Math.floor(Math.random() * elements.length);
     var randomElement = elements.splice(randomIndex, 1)[0];
     saveElementsToLocalStorage(); // Save updated elements array to local storage
-    document.getElementById("output").innerHTML = "<p>Selected Element: " + randomElement + "</p>";
+    document.getElementById("output").innerHTML = "<p><span id=\"selected_element\">Selected Element: </span>" + randomElement + "</p>";
 }
 
 // Load elements from local storage when the page is loaded
